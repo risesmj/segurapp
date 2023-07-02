@@ -69,7 +69,7 @@ class LoginPage extends StatelessWidget {
                     ),
                   ),
                   onPressed: () {
-                    if (!kIsWeb) {
+                    if (kIsWeb) {
                       Modular.to.navigate('/web/central/');
                     } else {
                       Modular.to.navigate('/app/help');
